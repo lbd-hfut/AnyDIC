@@ -1,0 +1,695 @@
+[
+  {
+    "branch": "diagnostic/anydic-low-v3-d5",
+    "head": "f2a20057e93595e7a98243812cc817d64443cf15",
+    "commits_not_in_original_main": 31,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d5",
+    "decision_and_reports": [
+      "docs/research/low_v3_d5/LOW_V3_D5_ARCHITECTURE_DECISION.md",
+      "docs/results/low_v3_d5/D5_ARCHITECTURE_DECISION.json",
+      "docs/results/low_v3_d5/D5_DELIVERY_MANIFEST.json",
+      "docs/results/low_v3_d5/D5_FINAL_REPORT_AUDIT.json",
+      "docs/results/low_v3_d5/D5_REPLAY_MANIFEST.json"
+    ]
+  },
+  {
+    "branch": "diagnostic/low-v3-r1-failure-mechanism",
+    "head": "52c7981f4b754fcfd2b97a8b8cbeaaadb5200d0f",
+    "commits_not_in_original_main": 27,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d2",
+    "decision_and_reports": [
+      "docs/results/low_v3_r1_failure_mechanism/DELIVERY_MANIFEST.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c11-matching-repair",
+    "head": "0ac7d6659b84e2ef39072e45e88f06e3a38fce51",
+    "commits_not_in_original_main": 64,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c11-matching-repair",
+    "decision_and_reports": [
+      "docs/research/anydic_c11/C11_ANYDIC_MATCHING_FAILURE_REPAIR_ZH.pdf",
+      "docs/research/anydic_c11/C11_ARCHITECTURE_DECISION.md",
+      "docs/research/anydic_c11/C11_COHERENT_FAILURE_EVALUATION.md",
+      "docs/research/anydic_c11/C11_COHERENT_STRESS_POPULATION.md",
+      "docs/research/anydic_c11/C11_DIC_FINETUNING.md",
+      "docs/research/anydic_c11/C11_FINAL_DECISION.md",
+      "docs/research/anydic_c11/C11_GT_BENCHMARK.md",
+      "docs/research/anydic_c11/C11_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c11/C11_MATCHING_ERROR_RECOVERY.md",
+      "docs/research/anydic_c11/C11_MATCHING_REPAIR_IMPLEMENTATION.md",
+      "docs/research/anydic_c11/C11_OPTICAL_FLOW_ARCHITECTURE_REVIEW.md",
+      "docs/research/anydic_c11/C11_PRETRAINED_MODEL_COMPARISON.md",
+      "docs/research/anydic_c11/C11_PROTOCOL.md",
+      "docs/results/anydic_c11/C11_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c12-cross-resolution",
+    "head": "97cecd6fd3ad7b424502cfdbc0cdc09ccdee4176",
+    "commits_not_in_original_main": 65,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c12-cross-resolution",
+    "decision_and_reports": [
+      "docs/research/anydic_c12/C12_C11_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c12/C12_CROSS_RESOLUTION_ROBUSTNESS_REPORT_ZH.pdf",
+      "docs/research/anydic_c12/C12_FINAL_DECISION.md",
+      "docs/research/anydic_c12/C12_LARGE_ROTATION_AND_STARLIKE.md",
+      "docs/research/anydic_c12/C12_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c12/C12_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c12/C12_PHYSICAL_DISPLACEMENT_AND_GRADIENT.md",
+      "docs/research/anydic_c12/C12_PHYSICAL_RESOLUTION_PROTOCOL.md",
+      "docs/research/anydic_c12/C12_PROTOCOL.md",
+      "docs/research/anydic_c12/C12_PSF_NOISE_ILLUMINATION.md",
+      "docs/research/anydic_c12/C12_RUNTIME_AND_QUERY.md",
+      "docs/research/anydic_c12/C12_TEXTURE_OOD_RESULTS.md",
+      "docs/results/anydic_c12/C12_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c13-scale-aware",
+    "head": "c9270878b1d4e463d5823da1c92c859fef7ad3e1",
+    "commits_not_in_original_main": 67,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c13-scale-aware",
+    "decision_and_reports": [
+      "docs/research/anydic_c13/C13_ARCHITECTURE_DECISION.md",
+      "docs/research/anydic_c13/C13_COARSE_TO_NATIVE_FEASIBILITY.md",
+      "docs/research/anydic_c13/C13_FINAL_DECISION.md",
+      "docs/research/anydic_c13/C13_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c13/C13_GRADIENT_HOTSPOT.md",
+      "docs/research/anydic_c13/C13_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c13/C13_MULTI_RESOLUTION_TRAINING.md",
+      "docs/research/anydic_c13/C13_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c13/C13_PHYSICAL_CONVERGENCE.md",
+      "docs/research/anydic_c13/C13_PROTOCOL.md",
+      "docs/research/anydic_c13/C13_ROTATION_AND_PERIODIC_FAILURES.md",
+      "docs/research/anydic_c13/C13_RUNTIME_QUERY.md",
+      "docs/research/anydic_c13/C13_SCALE_AWARE_MATCHING_REPAIR_REPORT_ZH.pdf",
+      "docs/research/anydic_c13/C13_SCALE_FAILURE_ATTRIBUTION.md",
+      "docs/results/anydic_c13/C13_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c14-nonrotation-cross-scale",
+    "head": "f2dbcfe8120b04ffcc30a32eba2675c865df715d",
+    "commits_not_in_original_main": 69,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c14-nonrotation",
+    "decision_and_reports": [
+      "docs/research/anydic_c14/C14_ARCHITECTURE_AND_TRAINING_DECISION.md",
+      "docs/research/anydic_c14/C14_C13_DEV_REEVALUATION.md",
+      "docs/research/anydic_c14/C14_CORRECT_MATCH_PRESERVATION.md",
+      "docs/research/anydic_c14/C14_FINAL_DECISION.md",
+      "docs/research/anydic_c14/C14_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c14/C14_GRADIENT_HOTSPOT.md",
+      "docs/research/anydic_c14/C14_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c14/C14_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c14/C14_NONROTATION_C13_DEV_REEVALUATION.md",
+      "docs/research/anydic_c14/C14_NONROTATION_CROSS_SCALE_REPORT_ZH.pdf",
+      "docs/research/anydic_c14/C14_NONROTATION_SCOPE.md",
+      "docs/research/anydic_c14/C14_PERIODIC_FIELD_ANALYSIS.md",
+      "docs/research/anydic_c14/C14_PHYSICAL_CONVERGENCE.md",
+      "docs/research/anydic_c14/C14_PROTOCOL.md",
+      "docs/research/anydic_c14/C14_TARGETED_TRAINING.md",
+      "docs/results/anydic_c14/C14_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c15-full-frame-training",
+    "head": "c960a39379ea10d5f65825a89f4bc29e69832746",
+    "commits_not_in_original_main": 70,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c15-full-frame",
+    "decision_and_reports": [
+      "docs/research/anydic_c15/C15_CROP_CORRESPONDENCE_SUPPORT.md",
+      "docs/research/anydic_c15/C15_CROP_LOSS_MASK_AUDIT.md",
+      "docs/research/anydic_c15/C15_FINAL_DECISION.md",
+      "docs/research/anydic_c15/C15_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c15/C15_FULL_FRAME_CORRESPONDENCE_TRAINING_REPORT_ZH.pdf",
+      "docs/research/anydic_c15/C15_FULL_FRAME_OPTIMIZER_FEASIBILITY.md",
+      "docs/research/anydic_c15/C15_FULL_VS_CROP_FEATURE_ANALYSIS.md",
+      "docs/research/anydic_c15/C15_MATCHED_TRAINING_PROTOCOL.md",
+      "docs/research/anydic_c15/C15_NATIVE_UPDATE_STABILITY.md",
+      "docs/research/anydic_c15/C15_PAIRED_TRAINING_RESULTS.md",
+      "docs/research/anydic_c15/C15_PROTOCOL.md",
+      "docs/results/anydic_c15/C15_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-c16-native-update-stability",
+    "head": "caba509f21de6f698c01e8ef685851c0b2dca887",
+    "commits_not_in_original_main": 71,
+    "commits_exclusive_to_this_local_branch": 1,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-c16-native-update-stability",
+    "decision_and_reports": [
+      "docs/research/anydic_c16/C16_A_CORRECT_POINT_TRANSITION_ATLAS.md",
+      "docs/research/anydic_c16/C16_A_GT_FREE_RISK_SIGNAL_AUDIT.md",
+      "docs/research/anydic_c16/C16_A_ORACLE_AND_EARLY_EXIT_DIAGNOSIS.md",
+      "docs/research/anydic_c16/C16_A_PHASE_DECISION.md",
+      "docs/research/anydic_c16/C16_A_UPDATER_MATHEMATICAL_AUDIT.md",
+      "docs/research/anydic_c16/C16_B_EXPERIMENT_DESIGN.md",
+      "docs/research/anydic_c16/C16_REPRODUCIBILITY.md",
+      "docs/results/anydic_c16/C16_A_RESULTS_SUMMARY.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c0-generalization",
+    "head": "335284bf24a1ec252901ed6b1d662543cf05acc5",
+    "commits_not_in_original_main": 41,
+    "commits_exclusive_to_this_local_branch": 1,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c0",
+    "decision_and_reports": [
+      "docs/research/low_v3_c0/LOW_V3_C0_FIELD_TREND_ANALYSIS.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_FINAL_CONCLUSION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_GPU_COST.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_MOTION_GENERALIZATION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_OPERATOR_CONSISTENCY.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_PHYSICAL_BENCHMARK.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_PROTOCOL.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_QUERY_CONSISTENCY.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_RESOLUTION_GENERALIZATION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_TEXTURE_GENERALIZATION.md",
+      "docs/research/low_v3_c0/pdf/LOW_V3_C0_FIELD_ATLAS.pdf",
+      "docs/research/low_v3_c0/pdf/LOW_V3_C0_RESULTS_REPORT_ZH.pdf",
+      "docs/results/low_v3_c0/C0_GENERALIZATION_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c1-convergence",
+    "head": "d760af109a22010b758b91c7336d939cfe6cdad3",
+    "commits_not_in_original_main": 41,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c1",
+    "decision_and_reports": [
+      "docs/research/low_v3_c1/C1_FEATURE_DEFORMATION_MECHANISM.md",
+      "docs/research/low_v3_c1/C1_FINAL_DECISION.md",
+      "docs/research/low_v3_c1/C1_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c1/C1_MECHANISM_DECISION.md",
+      "docs/research/low_v3_c1/C1_PROTOCOL.md",
+      "docs/research/low_v3_c1/C1_TRAINING_AND_ABLATION.md",
+      "docs/results/low_v3_c1/C1_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c10-support-aware",
+    "head": "40ab87ed1ae3478cc32d5121b84824c014616689",
+    "commits_not_in_original_main": 62,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c10",
+    "decision_and_reports": [
+      "docs/research/low_v3_c10/C10_ABLATION_AND_RUNTIME.md",
+      "docs/research/low_v3_c10/C10_COHERENT_FAILURE_RESULTS.md",
+      "docs/research/low_v3_c10/C10_F4_SUPPORT_PRESERVATION.md",
+      "docs/research/low_v3_c10/C10_FINAL_DECISION.md",
+      "docs/research/low_v3_c10/C10_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c10/C10_IMAGE_LEVEL_MOTION_ANCHORS.md",
+      "docs/research/low_v3_c10/C10_JOINT_E4_E1_LEARNING.md",
+      "docs/research/low_v3_c10/C10_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c10/C10_PROTOCOL.md",
+      "docs/research/low_v3_c10/C10_SUPPORT_AWARE_ARCHITECTURE.md",
+      "docs/research/low_v3_c10/C10_TRAINING_AND_SELECTION.md",
+      "docs/research/low_v3_c10/README.md",
+      "docs/results/low_v3_c10/C10_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c1g-affine",
+    "head": "837a2cafa000f9953172693770a1ac9a2b1ab605",
+    "commits_not_in_original_main": 43,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c1g",
+    "decision_and_reports": [
+      "docs/research/low_v3_c1g/C1G_AFFINE_ORACLE_ANALYSIS.md",
+      "docs/research/low_v3_c1g/C1G_COMPARATIVE_RESULTS.md",
+      "docs/research/low_v3_c1g/C1G_DEPLOYABLE_COMPENSATION.md",
+      "docs/research/low_v3_c1g/C1G_FINAL_DECISION.md",
+      "docs/research/low_v3_c1g/C1G_PROTOCOL.md",
+      "docs/results/low_v3_c1g/C1G_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c2-final",
+    "head": "bf6e0d29cdd870c47d65bf81696beddf0c31edcd",
+    "commits_not_in_original_main": 46,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c2",
+    "decision_and_reports": [
+      "docs/research/low_v3_c2/C2_AUTHORITY_AND_INTEGRITY.md",
+      "docs/research/low_v3_c2/C2_FIELD_AND_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c2/C2_FINAL_DECISION.md",
+      "docs/research/low_v3_c2/C2_GENERALIZATION_RESULTS.md",
+      "docs/research/low_v3_c2/C2_INDEPENDENT_AUDIT.md",
+      "docs/research/low_v3_c2/C2_OPERATOR_AND_RUNTIME.md",
+      "docs/research/low_v3_c2/C2_PROTOCOL.md",
+      "docs/results/low_v3_c2/C2_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c3a-equivariant",
+    "head": "bd8f347d7b7097fdc65697b4226b921030f0cf60",
+    "commits_not_in_original_main": 47,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3a",
+    "decision_and_reports": [
+      "docs/research/low_v3_c3a/C3A_AFFINE_STEERER_RESULTS.md",
+      "docs/research/low_v3_c3a/C3A_END_TO_END_TRANSFER.md",
+      "docs/research/low_v3_c3a/C3A_EQUIVARIANT_LITERATURE_AND_TRANSFER_AUDIT.md",
+      "docs/research/low_v3_c3a/C3A_FEATURE_GEOMETRY_MECHANISM.md",
+      "docs/research/low_v3_c3a/C3A_FINAL_DECISION.md",
+      "docs/research/low_v3_c3a/C3A_GEOMETRIC_EQUIVARIANCE_REPORT_ZH.pdf",
+      "docs/research/low_v3_c3a/C3A_PROTOCOL.md",
+      "docs/research/low_v3_c3a/C3A_ROTATION_STEERER_RESULTS.md",
+      "docs/results/low_v3_c3a/C3A_DELIVERY_MANIFEST.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c3d-candidate-fate",
+    "head": "735acc53a962922d9ba357eb05a067b8b68819c3",
+    "commits_not_in_original_main": 48,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3d",
+    "decision_and_reports": [
+      "docs/research/low_v3_c3d/C3D_CANDIDATE_FATE_ANALYSIS.md",
+      "docs/research/low_v3_c3d/C3D_FINAL_DECISION.md",
+      "docs/research/low_v3_c3d/C3D_PIPELINE_AUDIT.md",
+      "docs/research/low_v3_c3d/C3D_PROTOCOL.md",
+      "docs/research/low_v3_c3d/C3D_QUERY_BITWISE_DIAGNOSIS.md",
+      "docs/research/low_v3_c3d/C3D_STAGE_ORACLE_AND_FAILURE_ATTRIBUTION.md",
+      "docs/results/low_v3_c3d/C3D_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c3e-f4-multihypothesis",
+    "head": "6f23a9424d3d1c7f662c1d9d5e80a86c20361225",
+    "commits_not_in_original_main": 49,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3e",
+    "decision_and_reports": [
+      "docs/research/low_v3_c3e/C3E_ADAPTIVE_HYPOTHESIS_METHOD.md",
+      "docs/research/low_v3_c3e/C3E_F4_TOP2_ORACLE.md",
+      "docs/research/low_v3_c3e/C3E_FIELD_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c3e/C3E_FINAL_DECISION.md",
+      "docs/research/low_v3_c3e/C3E_MULTI_HYPOTHESIS_F4_REPORT_ZH.pdf",
+      "docs/research/low_v3_c3e/C3E_PROTOCOL.md",
+      "docs/research/low_v3_c3e/C3E_SELECTION_AND_CONFIRMATION.md",
+      "docs/results/low_v3_c3e/C3E_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c4-identifiability",
+    "head": "c033fc1ea98e8f56c8bbec3e090e118c6bd66ffb",
+    "commits_not_in_original_main": 50,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c4",
+    "decision_and_reports": [
+      "docs/research/low_v3_c4/C4_CORRESPONDENCE_IDENTIFIABILITY_REPORT_ZH.pdf",
+      "docs/research/low_v3_c4/C4_DEPLOYABLE_COST_AND_DECISION.md",
+      "docs/research/low_v3_c4/C4_EVIDENCE_IDENTIFIABILITY.md",
+      "docs/research/low_v3_c4/C4_FINAL_DECISION.md",
+      "docs/research/low_v3_c4/C4_FORWARD_BACKWARD_ANALYSIS.md",
+      "docs/research/low_v3_c4/C4_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c4/C4_PROTOCOL.md",
+      "docs/research/low_v3_c4/C4_SPATIAL_GEOMETRY_ANALYSIS.md",
+      "docs/results/low_v3_c4/C4_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c4b-bidirectional",
+    "head": "dad1a0616efa4d375caa030297bb3142842cbc7a",
+    "commits_not_in_original_main": 51,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c4b",
+    "decision_and_reports": [
+      "docs/research/low_v3_c4b/C4B_CANDIDATE_IDENTIFIABILITY.md",
+      "docs/research/low_v3_c4b/C4B_FIELD_FAILURE_AND_RUNTIME.md",
+      "docs/research/low_v3_c4b/C4B_FINAL_DECISION.md",
+      "docs/research/low_v3_c4b/C4B_LIGHTWEIGHT_REVERSE_EVIDENCE.md",
+      "docs/research/low_v3_c4b/C4B_LOW_COST_BIDIRECTIONAL_REPORT_ZH.pdf",
+      "docs/research/low_v3_c4b/C4B_PROTOCOL.md",
+      "docs/research/low_v3_c4b/C4B_REVERSE_PIPELINE_AND_COST_AUDIT.md",
+      "docs/results/low_v3_c4b/C4B_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c5-local-refinement",
+    "head": "56303e977cef3e4d8b2de96d51ebdbce92ba8649",
+    "commits_not_in_original_main": 52,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c5",
+    "decision_and_reports": [
+      "docs/research/low_v3_c5/C5_ABLATION_AND_SELECTION.md",
+      "docs/research/low_v3_c5/C5_ARCHITECTURE_AND_LEARNABILITY.md",
+      "docs/research/low_v3_c5/C5_FIELD_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c5/C5_FINAL_DECISION.md",
+      "docs/research/low_v3_c5/C5_LEARNED_LOCAL_REFINEMENT_REPORT_ZH.pdf",
+      "docs/research/low_v3_c5/C5_LOCAL_REFINER_TRAINING.md",
+      "docs/research/low_v3_c5/C5_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c5/C5_PROTOCOL.md",
+      "docs/results/low_v3_c5/C5_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c5r-recheck",
+    "head": "5df6219f0c732cec1fab8f1279661b9fa732a242",
+    "commits_not_in_original_main": 54,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c5r",
+    "decision_and_reports": [
+      "docs/research/low_v3_c5r/C5R_BLOCKED_VALIDATION_RESUME.md",
+      "docs/research/low_v3_c5r/C5R_ENGINEERING_AND_LEARNABILITY_REPORT_ZH.pdf",
+      "docs/research/low_v3_c5r/C5R_EXCLUSIVE_GPU_BENCHMARK.md",
+      "docs/research/low_v3_c5r/C5R_EXCLUSIVE_GPU_VERIFICATION.md",
+      "docs/research/low_v3_c5r/C5R_FINAL_DECISION.md",
+      "docs/research/low_v3_c5r/C5R_IDENTITY_INITIALIZATION.md",
+      "docs/research/low_v3_c5r/C5R_MICRO_LEARNABILITY.md",
+      "docs/research/low_v3_c5r/C5R_MICRO_TRAINING_RESULTS.md",
+      "docs/research/low_v3_c5r/C5R_PROTOCOL.md",
+      "docs/research/low_v3_c5r/C5R_REFINEMENT_INTERFACE_AUDIT.md",
+      "docs/research/low_v3_c5r/C5R_REPLACEMENT_VS_IDENTITY_COST.md",
+      "docs/research/low_v3_c5r/C5R_RESUME_FINAL_DECISION.md",
+      "docs/results/low_v3_c5r/C5R_RESUME_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c6-information-audit",
+    "head": "7af849d8f4e1073a82c29604d4b0010cf236ff0d",
+    "commits_not_in_original_main": 56,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c6",
+    "decision_and_reports": [
+      "docs/research/low_v3_c6/C6_COHERENT_REGION_ANALYSIS.md",
+      "docs/research/low_v3_c6/C6_CORRELATION_IMPLEMENTATION_AUDIT.md",
+      "docs/research/low_v3_c6/C6_E4_E1_INFORMATION_ANALYSIS.md",
+      "docs/research/low_v3_c6/C6_FINAL_DECISION.md",
+      "docs/research/low_v3_c6/C6_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c6/C6_INDEPENDENT_AUDIT.md",
+      "docs/research/low_v3_c6/C6_LOCAL_CORRESPONDENCE_INFORMATION_REPORT_ZH.pdf",
+      "docs/research/low_v3_c6/C6_NEW_POPULATION_CONFIRMATION.md",
+      "docs/research/low_v3_c6/C6_PROTOCOL.md",
+      "docs/research/low_v3_c6/C6_REPRODUCTION.md",
+      "docs/research/low_v3_c6/C6_SEARCH_SUPPORT_AND_REACHABILITY.md",
+      "docs/research/low_v3_c6/C6_STAGE_FAILURE_ATTRIBUTION.md",
+      "docs/results/low_v3_c6/C6_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c7-local-feature",
+    "head": "08747426ee2fcfe89a16864312606e0321338f85",
+    "commits_not_in_original_main": 57,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c7",
+    "decision_and_reports": [
+      "docs/research/low_v3_c7/C7_ARCHITECTURE.md",
+      "docs/research/low_v3_c7/C7_DEFORMATION_AWARE_LOCAL_FEATURE_REPORT_ZH.pdf",
+      "docs/research/low_v3_c7/C7_E4_TO_E1_TRANSFER.md",
+      "docs/research/low_v3_c7/C7_FEATURE_RANKING_AND_ABLATION.md",
+      "docs/research/low_v3_c7/C7_FINAL_DECISION.md",
+      "docs/research/low_v3_c7/C7_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c7/C7_FULL_FIELD_RESULTS.md",
+      "docs/research/low_v3_c7/C7_LOCAL_MATCHING_LEARNABILITY.md",
+      "docs/research/low_v3_c7/C7_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c7/C7_PROTOCOL.md",
+      "docs/results/low_v3_c7/C7_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c8-pair-conditioned",
+    "head": "d6506f3b24d86154bde45205cc8bb84de1b0b434",
+    "commits_not_in_original_main": 58,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c8",
+    "decision_and_reports": [
+      "docs/research/low_v3_c8/C8_FEATURE_AND_PAIR_ABLATION.md",
+      "docs/research/low_v3_c8/C8_FINAL_DECISION.md",
+      "docs/research/low_v3_c8/C8_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c8/C8_FULL_FIELD_EVALUATION.md",
+      "docs/research/low_v3_c8/C8_LOCAL_GEOMETRY_INFORMATION.md",
+      "docs/research/low_v3_c8/C8_LOCKED_DEVELOPMENT_CHECK.md",
+      "docs/research/low_v3_c8/C8_MICRO_LEARNABILITY.md",
+      "docs/research/low_v3_c8/C8_PAIR_CONDITIONED_ARCHITECTURE.md",
+      "docs/research/low_v3_c8/C8_PAIR_CONDITIONED_LOCAL_MATCHING_REPORT_ZH.pdf",
+      "docs/research/low_v3_c8/C8_PROTOCOL.md",
+      "docs/results/low_v3_c8/C8_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c9-real-validation",
+    "head": "0d802df1bdd5c3456072d43e076efa3300ac8e46",
+    "commits_not_in_original_main": 59,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9",
+    "decision_and_reports": [
+      "docs/research/low_v3_c9/C9_C6_MECHANISM_TRANSFER.md",
+      "docs/research/low_v3_c9/C9_FINAL_DECISION.md",
+      "docs/research/low_v3_c9/C9_PHYSICAL_COORDINATE_AUDIT.md",
+      "docs/research/low_v3_c9/C9_PROTOCOL.md",
+      "docs/research/low_v3_c9/C9_REAL_DATA_INVENTORY.md",
+      "docs/research/low_v3_c9/C9_REAL_DISPLACEMENT_ACCURACY.md",
+      "docs/research/low_v3_c9/C9_REAL_EXPERIMENTAL_VALIDATION_REPORT_ZH.pdf",
+      "docs/research/low_v3_c9/C9_REAL_EXPERIMENT_ACQUISITION_PROTOCOL.md",
+      "docs/research/low_v3_c9/C9_REAL_GRADIENT_AND_HOTSPOT.md",
+      "docs/research/low_v3_c9/C9_REAL_REPEATABILITY.md",
+      "docs/research/low_v3_c9/C9_REFERENCE_TRACEABILITY.md",
+      "docs/results/low_v3_c9/C9_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c9b-dic-challenge",
+    "head": "859d53e1b7e769f15e4ac91d397de56c4804f5ba",
+    "commits_not_in_original_main": 60,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9b",
+    "decision_and_reports": [
+      "docs/research/low_v3_c9b/C9B_C6_MECHANISM_TRANSFER.md",
+      "docs/research/low_v3_c9b/C9B_DIC_CHALLENGE_REAL_IMAGE_EVALUATION_ZH.pdf",
+      "docs/research/low_v3_c9b/C9B_FINAL_DECISION.md",
+      "docs/research/low_v3_c9b/C9B_OFFICIAL_PROVENANCE_AND_REFERENCE.md",
+      "docs/research/low_v3_c9b/C9B_PROTOCOL.md",
+      "docs/research/low_v3_c9b/C9B_REAL_SELF_CONSISTENCY.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE12_REAL_FIELD.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE13_CRACK_AND_DEFORMATION.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE16_STAGE_AUDIT.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE17_OUT_OF_PLANE.md",
+      "docs/results/low_v3_c9b/C9B_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-c9c-observability",
+    "head": "594678f2315b1b2a2a948ef624d27145c1690648",
+    "commits_not_in_original_main": 61,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9c",
+    "decision_and_reports": [
+      "docs/research/low_v3_c9c/C9C_CONFIDENCE_ASSESSMENT.md",
+      "docs/research/low_v3_c9c/C9C_CYCLE_TEMPORAL_ANALYSIS.md",
+      "docs/research/low_v3_c9c/C9C_FINAL_DECISION.md",
+      "docs/research/low_v3_c9c/C9C_FROZEN_DATA_AUTHORITY.md",
+      "docs/research/low_v3_c9c/C9C_PHOTOMETRIC_AND_PEAK_EVIDENCE.md",
+      "docs/research/low_v3_c9c/C9C_PROTOCOL.md",
+      "docs/research/low_v3_c9c/C9C_REAL_OBSERVABILITY_AND_RELIABILITY_REPORT_ZH.pdf",
+      "docs/research/low_v3_c9c/C9C_REPRODUCTION.md",
+      "docs/research/low_v3_c9c/C9C_SAMPLE13_MATERIAL_VISIBILITY.md",
+      "docs/research/low_v3_c9c/C9C_SAMPLE16_REFERENCE_FOLLOWUP.md",
+      "docs/research/low_v3_c9c/C9C_SELECTIVE_ABSTENTION.md",
+      "docs/results/low_v3_c9c/C9C_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-d3-dual-phase",
+    "head": "ae59a4b74bb975be5d7da68c26ae24d2a6b961d3",
+    "commits_not_in_original_main": 28,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d3",
+    "decision_and_reports": [
+      "docs/results/low_v3_d3/D3_CONFIRM_BLIND_INPUT_MANIFEST.json",
+      "docs/results/low_v3_d3/D3_CONFIRM_MANIFEST.json",
+      "docs/results/low_v3_d3/D3_DECISION_PROPOSAL.json",
+      "docs/results/low_v3_d3/D3_DELIVERY_MANIFEST.json",
+      "docs/results/low_v3_d3/D3_DEV_BLIND_INPUT_MANIFEST.json",
+      "docs/results/low_v3_d3/D3_DEV_MANIFEST.json",
+      "docs/results/low_v3_d3/D3_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-d4-f8net",
+    "head": "1b8d72fe82150b8ca1c171799ce0664e0930dcfa",
+    "commits_not_in_original_main": 30,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d4-f8net",
+    "decision_and_reports": [
+      "docs/results/low_v3_d4/D4_DELIVERY_MANIFEST.json",
+      "docs/results/low_v3_d4/D4_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-d6a-f4net",
+    "head": "02ca1ab8e16d9bf432063816e2011840293d51ed",
+    "commits_not_in_original_main": 33,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d6a-f4net",
+    "decision_and_reports": [
+      "docs/research/low_v3_d6a/LOW_V3_D6A_ARCHITECTURE_DECISION.md",
+      "docs/results/low_v3_d6a/D6A_DELIVERY_MANIFEST.json",
+      "docs/results/low_v3_d6a/D6A_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-d6b-joint",
+    "head": "7bef21a6b119c051f0805031dc18a3229d212497",
+    "commits_not_in_original_main": 35,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-d6b-joint",
+    "decision_and_reports": [
+      "docs/research/low_v3_d6b/LOW_V3_D6B_FINAL_ARCHITECTURE_DECISION.md",
+      "docs/results/low_v3_d6b/D6B_DELIVERY_MANIFEST.json",
+      "docs/results/low_v3_d6b/D6B_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-f8",
+    "head": "2dee12c21d8cfcf2cde4088daeb2d613b0c8eeef",
+    "commits_not_in_original_main": 17,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-f8",
+    "decision_and_reports": []
+  },
+  {
+    "branch": "experiment/anydic-low-v3-f8-r1",
+    "head": "e79619081a737b5d39d1dcac65c81e440b5b3ab0",
+    "commits_not_in_original_main": 19,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-f8-r1",
+    "decision_and_reports": [
+      "docs/results/low_v3_r1/LOW_V3_R1_DELIVERY_MANIFEST.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-low-v3-prospective",
+    "head": "ef942815a618ef9d5920cf92576b630cf8698171",
+    "commits_not_in_original_main": 25,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-prospective",
+    "decision_and_reports": [
+      "docs/results/low_v3_prospective_case_atlas/CASE_ATLAS_DELIVERY_MANIFEST.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-medium-gmflow-coarse",
+    "head": "d74511567de499f53f8b3ce83534b137c2e22603",
+    "commits_not_in_original_main": 1,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse",
+    "decision_and_reports": [
+      "docs/results/MEDIUM_M1_DELIVERY_MANIFEST.json",
+      "docs/results/MEDIUM_M1_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-medium-m2-gmflow-lightweight",
+    "head": "2f0f2c4b49faa9ccd489cebbebd2b7b821782fd3",
+    "commits_not_in_original_main": 4,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-medium-m2-gmflow-lightweight",
+    "decision_and_reports": [
+      "docs/results/MEDIUM_M2_DELIVERY_MANIFEST.json",
+      "docs/results/MEDIUM_M2_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-medium-m3-continuous-e8",
+    "head": "b45668d3fe41a941be0a189e6f4e2bbe26e824ac",
+    "commits_not_in_original_main": 9,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-medium-m3-continuous-e8",
+    "decision_and_reports": [
+      "docs/results/MEDIUM_M3_DELIVERY_MANIFEST.json",
+      "docs/results/MEDIUM_M3_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-medium-m4-routing",
+    "head": "1d53d4cbd37cb8fe3defd69e2e7fc1d27e3f23b5",
+    "commits_not_in_original_main": 12,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-medium-m4-routing",
+    "decision_and_reports": [
+      "docs/results/MEDIUM_M4_DELIVERY_MANIFEST.json",
+      "docs/results/MEDIUM_M4_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "experiment/anydic-medium-m5-prospective",
+    "head": "d4c0c6c42cc90c1f05a52b3f0ed4561b3ed4c857",
+    "commits_not_in_original_main": 15,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_WORKTREES}/anydic-medium-m5-prospective",
+    "decision_and_reports": [
+      "docs/results/MEDIUM_M5_DELIVERY_MANIFEST.json",
+      "docs/results/MEDIUM_M5_FINAL_DECISION.json"
+    ]
+  },
+  {
+    "branch": "main",
+    "head": "5c0ec91458ab6dbe5f485a78e453da5061099a62",
+    "commits_not_in_original_main": 0,
+    "commits_exclusive_to_this_local_branch": 0,
+    "git_recoverable": true,
+    "original_worktree": "${ANYDIC_REPOSITORY}",
+    "decision_and_reports": [
+      "configs/diagnostics/anydic_v1_9_2_corrector_manifest.json",
+      "configs/diagnostics/anydic_v1_9_2_evaluation_manifest.json",
+      "configs/diagnostics/anydic_v1_9_2_gate_manifest.json",
+      "configs/diagnostics/anydic_v1_9_2_oracle_manifest.json",
+      "configs/diagnostics/anydic_v1_9_2_predictor_manifest.json",
+      "configs/diagnostics/anydic_v1_9_3_selection_manifest.json",
+      "configs/diagnostics/anydic_v1_9_4_3_evaluation_manifest.json",
+      "configs/diagnostics/anydic_v1_9_4_3_selection_manifest.json",
+      "diagnostics/medium_v193/manifests/v193_locked_eval_432.json",
+      "diagnostics/medium_v194/manifests/evaluation.json",
+      "diagnostics/medium_v194/manifests/selection.json",
+      "docs/results/ACTIVE_MAIN_SOURCE_MANIFEST.json",
+      "docs/results/HISTORICAL_SOURCE_REMOVAL_MANIFEST.json"
+    ]
+  }
+]

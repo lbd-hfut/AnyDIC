@@ -1,0 +1,191 @@
+{
+  "required_documents": 14,
+  "total_consolidation_documents": 18,
+  "document_links_checked": 71,
+  "json_parse": "PASS",
+  "38_archive_manifest_fingerprints": "PASS",
+  "37_ordinary_removals_1_active_retained": "PASS",
+  "114_checkpoint_file_locations_and_manifest_sha256": "PASS",
+  "five_core_checkpoint_full_SHA256_reread_after_cleanup": "PASS",
+  "historical_heads_preserved": 39,
+  "historical_tags_preserved": 10,
+  "source_final_decisions_Git_SHA256_verified": 24,
+  "archive_symlinks_checked": [
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-sea/lib64",
+      "target": "lib",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "76b5a357391276b282a516f54f48ef3c207f46d8192dc58c208d5183d38415f8",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-sea/bin/python",
+      "target": "${LOCAL_HOME}/miniconda3/envs/pytorch_env/bin/python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "a1eb6b9868fc9cd879ea58c785de23dd1d3d4dc679bd9bdac0360a664d0a486b",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-sea/bin/python3",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-sea/bin/python3.9",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-flow/lib64",
+      "target": "lib",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "76b5a357391276b282a516f54f48ef3c207f46d8192dc58c208d5183d38415f8",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-flow/bin/python",
+      "target": "${LOCAL_HOME}/miniconda3/envs/dic/bin/python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "94692285bd92f03ddee6d9813a55a4249fb395f9e74d0505c58a7087507e30f7",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-flow/bin/python3",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-flow/bin/python3.10",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-official/lib64",
+      "target": "lib",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "76b5a357391276b282a516f54f48ef3c207f46d8192dc58c208d5183d38415f8",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-official/bin/python",
+      "target": "${LOCAL_HOME}/miniconda3/bin/python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "4948e01370ebdea885f063bd966165938091cb299addddd00949bb042e7182f2",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-official/bin/python3",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-c11-matching-repair/runs/anydic_c11/env-official/bin/python3.13",
+      "target": "python",
+      "exists_at_original_link_text": true,
+      "link_text_sha256": "11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+      "disposition": "TARGET_PRESENT"
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-low-v3-f8/runs/low_v3_f8/firefox_qa/lock",
+      "target": "${LOCAL_BROWSER_LOCK}",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "5b0a9b29fe3fdc664e0d0bbf15af7aaf4360b2b0430d715f63cf3d64f3c909c5",
+      "disposition": "ORIGINALLY_UNRESOLVED_BROWSER_PROFILE_LOCK_MARKER_PRESERVED_VERBATIM",
+      "original_target_present_in_source_inventory": false
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-low-v3-f8-r1/runs/low_v3_r1/svg_qa_profile/lock",
+      "target": "${LOCAL_BROWSER_LOCK}",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "584264e14b61bd949076573f922597aab6c1b377158f9f73c02dfe5cd2181eaf",
+      "disposition": "ORIGINALLY_UNRESOLVED_BROWSER_PROFILE_LOCK_MARKER_PRESERVED_VERBATIM",
+      "original_target_present_in_source_inventory": false
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_boundary_test/test_chunk_invariance_crosses_current",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_boundary_test/test_chunk_invariance_crosses_0",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "d87a3614a5f0a2fb4cc2fc4f40266167978fd3639fda5e46202d725f0f652fc7",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_boundary_test/test_chunk_invariance_crosses_0",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_config_rejects_scientificcurrent",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_config_rejects_scientific5",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "2b7fa474c8d601d4edc66b4949f453370e6ed64a8e9ff17058d56013d9ecb8d3",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_config_rejects_scientific5",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_cli_image_query_inferencecurrent",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_cli_image_query_inference0",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "401daae4d3d9b2775c18c484c3ef68d82844559502ba9c9ed2544b7e55951cbe",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_cli_image_query_inference0",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_transitive_import_audit_rcurrent",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_transitive_import_audit_r5",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "f1f1f7bdd93c6a2edca576cebf5832c73992531e0575bb6fd3d9acb65976ae79",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_transitive_import_audit_r5",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_unresolved_dynamic_produccurrent",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_unresolved_dynamic_produc0",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "3b8b4e029027d85ffd780011d34ef92df029c7415823d963db4a6330122bfd1d",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_unresolved_dynamic_produc0",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_chunk_invariance_crosses_current",
+      "target": "${ANYDIC_WORKTREES}/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_chunk_invariance_crosses_0",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "8a6678cc3d012eb5af2bf4f840aa019ebcf3e6375f55817fb6f48977c8569320",
+      "disposition": "TARGET_DIRECTORY_PRESERVED_WITH_ABSOLUTE_PATH_MAP",
+      "relocated_target": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-gmflow-coarse/runs/medium_m1_final_tests/test_chunk_invariance_crosses_0",
+      "original_target_in_source_directory_inventory": true
+    },
+    {
+      "path": "${ANYDIC_RESEARCH_ARCHIVE}/worktree_assets/anydic-medium-m3-continuous-e8/runs/medium_m3/svg_render_profile/lock",
+      "target": "${LOCAL_BROWSER_LOCK}",
+      "exists_at_original_link_text": false,
+      "link_text_sha256": "525222b474baa574cdab34e717da518967406c78bf548cd6fa0f1a0f8d58349b",
+      "disposition": "ORIGINALLY_UNRESOLVED_BROWSER_PROFILE_LOCK_MARKER_PRESERVED_VERBATIM",
+      "original_target_present_in_source_inventory": false
+    }
+  ],
+  "Git_connectivity_fsck": "PASS (git fsck --connectivity-only --no-dangling returned 0 during cleanup)",
+  "main_branch_pointer_unchanged": true,
+  "production_code_config_and_original_docs_unchanged": true,
+  "new_files_only_documentation_and_small_JSON": true,
+  "recovery_samples": 5,
+  "no_retraining_or_GPU_numerical_replay": true,
+  "validation_scope": "Scientific summaries bound to original source decisions; file/branch/archive recovery validated, no new scientific qualification.",
+  "_publication": {
+    "kind": "sanitized_public_documentation_copy",
+    "source_commit": "126cab8a2e3c66fc4d6776981b248eb2a519ba21",
+    "source_file_sha256": "6cce06c0a170e8bfc5def177853d8094ac208a437d6ffead8b6ba77aa5484d4e",
+    "notice": "PUBLICATION_NOTICE.md",
+    "original_verification_claims": "Historical source statements; this publication does not requalify models or rehash the large archive."
+  }
+}

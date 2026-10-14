@@ -1,0 +1,831 @@
+[
+  {
+    "stage": "C0",
+    "branch": "experiment/anydic-low-v3-c0-generalization",
+    "head": "335284bf24a1ec252901ed6b1d662543cf05acc5",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c0",
+    "decision_path": "docs/results/low_v3_c0/C0_GENERALIZATION_FINAL_DECISION.json",
+    "decision_sha256": "c5664d869ae42153f67754578ff4e70ecfa8b4bbccc8b45bebe6895bcf84562c",
+    "decision_blob": "9f250cca536c72afef857dd8316af3c65cef271c",
+    "status": "LOW_V3_C0_GENERALIZATION_PARTIALLY_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c0/LOW_V3_C0_PROTOCOL.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_PHYSICAL_BENCHMARK.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_TEXTURE_GENERALIZATION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_RESOLUTION_GENERALIZATION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_MOTION_GENERALIZATION.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_QUERY_CONSISTENCY.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_OPERATOR_CONSISTENCY.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_FIELD_TREND_ANALYSIS.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_GPU_COST.md",
+      "docs/research/low_v3_c0/LOW_V3_C0_FINAL_CONCLUSION.md",
+      "docs/research/low_v3_c0/pdf/LOW_V3_C0_FIELD_ATLAS.pdf",
+      "docs/research/low_v3_c0/pdf/LOW_V3_C0_RESULTS_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "D4 的合成泛化是否优于 V2/R1",
+      "冻结模型，连续物理 world 与 Query/原生及标准化尺度对照",
+      "120 合成 world 推理；0 训练",
+      "部分维度支持；推荐 D4_DIRECT",
+      "纹理 OOD、原生收敛和复杂场不全面支持；无真实资格",
+      "建立独立 world、物理单位与 Query 一致性评价"
+    ],
+    "result_root": "runs/low_v3_c0",
+    "report_root": "docs/research/low_v3_c0",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C1",
+    "branch": "experiment/anydic-low-v3-c1-convergence",
+    "head": "d760af109a22010b758b91c7336d939cfe6cdad3",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c1",
+    "decision_path": "docs/results/low_v3_c1/C1_FINAL_DECISION.json",
+    "decision_sha256": "7ec8c68eaebc15070960531ea53091d09c1f200c1f8b01992c082be420681213",
+    "decision_blob": "a326e613cfcb971f913b4f068e10730bd08cadae",
+    "status": "LOW_V3_C1_DEVELOPMENT_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c1/C1_PROTOCOL.md",
+      "docs/research/low_v3_c1/C1_MECHANISM_DECISION.md",
+      "docs/research/low_v3_c1/C1_FEATURE_DEFORMATION_MECHANISM.md",
+      "docs/research/low_v3_c1/C1_TRAINING_AND_ABLATION.md",
+      "docs/research/low_v3_c1/C1_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c1/C1_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "形变敏感特征适配能否恢复匹配",
+      "Route A 68,693 参数 adapter，B1/B2 对照",
+      "各 12,000 GPU 更新；选择 step9000",
+      "特征形变失配获支持，开发修复未获支持",
+      "大位移、高梯度、标准化非回归、star-like Gate 失败",
+      "区分特征机制与完整场资格，保留实际训练负结果"
+    ],
+    "result_root": "runs/low_v3_c1",
+    "report_root": "docs/research/low_v3_c1",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C1G",
+    "branch": "experiment/anydic-low-v3-c1g-affine",
+    "head": "837a2cafa000f9953172693770a1ac9a2b1ab605",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c1g",
+    "decision_path": "docs/results/low_v3_c1g/C1G_FINAL_DECISION.json",
+    "decision_sha256": "609049dc196056af192b066966c54cf3a2c0e47607983968ef01349a8855c430",
+    "decision_blob": "d4dccf7577f8aa60bc98815c033e48e01d027c42",
+    "status": "C1G_AFFINE_COMPENSATION_UPPER_BOUND_INSUFFICIENT",
+    "reports": [
+      "docs/research/low_v3_c1g/C1G_PROTOCOL.md",
+      "docs/research/low_v3_c1g/C1G_AFFINE_ORACLE_ANALYSIS.md",
+      "docs/research/low_v3_c1g/C1G_DEPLOYABLE_COMPENSATION.md",
+      "docs/research/low_v3_c1g/C1G_COMPARATIVE_RESULTS.md",
+      "docs/research/low_v3_c1g/C1G_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "局部仿射补偿能否解除复杂变形失配",
+      "固定与 oracle 几何补偿上界",
+      "推理诊断；0 训练；B2/B3/B4 和 LOCKED 未运行",
+      "G1 恢复 0 复杂 root；O2 恢复 8",
+      "即使有 GT 上界也不足；不能部署 oracle",
+      "转向冻结 D4 的独立 C2 资格"
+    ],
+    "result_root": "runs/low_v3_c1g",
+    "report_root": "docs/research/low_v3_c1g",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C2",
+    "branch": "experiment/anydic-low-v3-c2-final",
+    "head": "bf6e0d29cdd870c47d65bf81696beddf0c31edcd",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c2",
+    "decision_path": "docs/results/low_v3_c2/C2_FINAL_DECISION.json",
+    "decision_sha256": "35f14e5308c4e48dc9c4ca693786d6fd8244a67d2ff981c4a79c82e03d6bf9b0",
+    "decision_blob": "4345e03f5315659989ec71568579fcfb31b0a5e7",
+    "status": "LOW_V3_C2_BOUNDED_SYNTHETIC_QUALIFIED",
+    "reports": [
+      "docs/research/low_v3_c2/C2_PROTOCOL.md",
+      "docs/research/low_v3_c2/C2_AUTHORITY_AND_INTEGRITY.md",
+      "docs/research/low_v3_c2/C2_GENERALIZATION_RESULTS.md",
+      "docs/research/low_v3_c2/C2_FIELD_AND_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c2/C2_OPERATOR_AND_RUNTIME.md",
+      "docs/research/low_v3_c2/C2_INDEPENDENT_AUDIT.md",
+      "docs/research/low_v3_c2/C2_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "未变 D4 是否取得有界合成资格",
+      "一次预测封存后 GT 解封，240 独立物理 world",
+      "执行推理和独立核验；0 训练",
+      "IID192 24 roots 中 21 通过；Query 支持通过；有界资格",
+      "Wilson 下界约 68.996%，不能证明普遍成功率≥80%；跨原生尺度、复杂场、真实实验未全面资格",
+      "冻结 LOW_V3_D4_DIRECT 与资格边界，不改生产"
+    ],
+    "result_root": "runs/low_v3_c2",
+    "report_root": "docs/research/low_v3_c2",
+    "environment_manifests": [
+      "docs/results/low_v3_c2/C2_MODEL_AUTHORITY.json",
+      "docs/results/low_v3_c2/C2_FROZEN_AUTHORITY_VERIFICATION.json",
+      "docs/results/low_v3_c2/C2_ENVIRONMENT_FREEZE.json"
+    ]
+  },
+  {
+    "stage": "C3A",
+    "branch": "experiment/anydic-low-v3-c3a-equivariant",
+    "head": "bd8f347d7b7097fdc65697b4226b921030f0cf60",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3a",
+    "decision_path": "docs/results/low_v3_c3a/C3A_DELIVERY_MANIFEST.json",
+    "decision_sha256": "899e6ce98d6924daf7fc89a3c37e52f17ba90bc4c5fedd86c0462511759011bd",
+    "decision_blob": "86a325f0099fc957a08b8e5a714ede22df90021a",
+    "status": "C3A_ENGINEERING_INCONCLUSIVE",
+    "reports": [
+      "docs/research/low_v3_c3a/C3A_PROTOCOL.md",
+      "docs/research/low_v3_c3a/C3A_EQUIVARIANT_LITERATURE_AND_TRANSFER_AUDIT.md",
+      "docs/research/low_v3_c3a/C3A_FEATURE_GEOMETRY_MECHANISM.md",
+      "docs/research/low_v3_c3a/C3A_ROTATION_STEERER_RESULTS.md",
+      "docs/research/low_v3_c3a/C3A_AFFINE_STEERER_RESULTS.md",
+      "docs/research/low_v3_c3a/C3A_END_TO_END_TRANSFER.md",
+      "docs/research/low_v3_c3a/C3A_FINAL_DECISION.md",
+      "docs/research/low_v3_c3a/C3A_GEOMETRIC_EQUIVARIANCE_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "几何等变特征能否迁移到 DIC",
+      "受约束 E8 几何矩阵/0–1 阶仿射与 SIFT 对照",
+      "24 校准 roots，48 选择 roots；拟合和推理执行，未进入全场 B2/LOCKED",
+      "rotation 子群候选召回改善；复杂 Top4 +0.821pp、Top1 −3.740pp",
+      "整体判别失败，严格 Query bitwise 失败；5 纹理条件不构成 240 独立 roots",
+      "相似度改善不能替代候选辨别和场级改善"
+    ],
+    "result_root": "runs/low_v3_c3a",
+    "report_root": "docs/research/low_v3_c3a",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C3D",
+    "branch": "experiment/anydic-low-v3-c3d-candidate-fate",
+    "head": "735acc53a962922d9ba357eb05a067b8b68819c3",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3d",
+    "decision_path": "docs/results/low_v3_c3d/C3D_FINAL_DECISION.json",
+    "decision_sha256": "be649ce26d5d48eb7f048b58180a1f0b2f612b24ad66fc798bcbe1457b413dbf",
+    "decision_blob": "d545716bea9692f0d8eb948c7fc6effde63b0e7e",
+    "status": "C3D_STAGE_FAILURE_MECHANISM_ATTRIBUTED",
+    "reports": [
+      "docs/research/low_v3_c3d/C3D_PROTOCOL.md",
+      "docs/research/low_v3_c3d/C3D_PIPELINE_AUDIT.md",
+      "docs/research/low_v3_c3d/C3D_CANDIDATE_FATE_ANALYSIS.md",
+      "docs/research/low_v3_c3d/C3D_STAGE_ORACLE_AND_FAILURE_ATTRIBUTION.md",
+      "docs/research/low_v3_c3d/C3D_QUERY_BITWISE_DIAGNOSIS.md",
+      "docs/research/low_v3_c3d/C3D_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "D4 候选在哪一级丢失",
+      "F8/F4/F1 候选命运追踪与受控 GT oracle",
+      "0 训练；实际阶段推理和 12-root 单独受控人口",
+      "主要 F4_SELECTION_LOSS，次要 F1_LOCALIZATION_LOSS",
+      "暴露开发人口；bitwise 失败但容差/候选身份/selector 决策一致；oracle 仅上界",
+      "提出形变鲁棒 F4 refinement 研究并量化支持丢失"
+    ],
+    "result_root": "runs/low_v3_c3d",
+    "report_root": "docs/research/low_v3_c3d",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C3E",
+    "branch": "experiment/anydic-low-v3-c3e-f4-multihypothesis",
+    "head": "6f23a9424d3d1c7f662c1d9d5e80a86c20361225",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c3e",
+    "decision_path": "docs/results/low_v3_c3e/C3E_FINAL_DECISION.json",
+    "decision_sha256": "1a3d1815f8ff402a62754e6f10f7a1b1608ae275c27b384b50b76fc6b541f9f8",
+    "decision_blob": "47f4f44940b881b0deb771794af77f9e64466bad",
+    "status": "LOW_V3_C3E_MULTI_HYPOTHESIS_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c3e/C3E_PROTOCOL.md",
+      "docs/research/low_v3_c3e/C3E_F4_TOP2_ORACLE.md",
+      "docs/research/low_v3_c3e/C3E_ADAPTIVE_HYPOTHESIS_METHOD.md",
+      "docs/research/low_v3_c3e/C3E_SELECTION_AND_CONFIRMATION.md",
+      "docs/research/low_v3_c3e/C3E_FIELD_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c3e/C3E_FINAL_DECISION.md",
+      "docs/research/low_v3_c3e/C3E_MULTI_HYPOTHESIS_F4_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "保留多个 F4 假设是否修复完整场",
+      "冻结网络、额外 F4 假设、无 GT 输出决策",
+      "推理执行；0 训练；Gate2 停止，LOCKED 未运行",
+      "有限单点改善；场趋势和 coherent 可靠性不改善",
+      "GT-free 部署规则不合格，仅暴露开发数据",
+      "多候选覆盖收益需要合法可部署的判别器"
+    ],
+    "result_root": "runs/low_v3_c3e",
+    "report_root": "docs/research/low_v3_c3e",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C4",
+    "branch": "experiment/anydic-low-v3-c4-identifiability",
+    "head": "c033fc1ea98e8f56c8bbec3e090e118c6bd66ffb",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c4",
+    "decision_path": "docs/results/low_v3_c4/C4_FINAL_DECISION.json",
+    "decision_sha256": "5da193c76d60a7e8ae0cc4753500fbd142878398ed58c1d7e19a976e34f65c7e",
+    "decision_blob": "f34214cd2b9f618722f7cb30f16b94030e50e083",
+    "status": "C4_FEATURE_IDENTIFIABLE_FIELD_UNPROVEN",
+    "reports": [
+      "docs/research/low_v3_c4/C4_PROTOCOL.md",
+      "docs/research/low_v3_c4/C4_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c4/C4_FORWARD_BACKWARD_ANALYSIS.md",
+      "docs/research/low_v3_c4/C4_SPATIAL_GEOMETRY_ANALYSIS.md",
+      "docs/research/low_v3_c4/C4_EVIDENCE_IDENTIFIABILITY.md",
+      "docs/research/low_v3_c4/C4_DEPLOYABLE_COST_AND_DECISION.md",
+      "docs/research/low_v3_c4/C4_FINAL_DECISION.md",
+      "docs/research/low_v3_c4/C4_CORRESPONDENCE_IDENTIFIABILITY_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "候选分数/光度/反向证据能否判别",
+      "完整反向匹配、锚点和候选证据审计",
+      "实际诊断推理；0 训练；新校准/新 LOCKED 未运行",
+      "存在独立候选信息；固定规则只有有限单点/趋势改善",
+      "成片错误未可靠减少；完整反向与锚点成本不满足部署",
+      "将研究问题收敛到可复用的低成本双向证据"
+    ],
+    "result_root": "runs/low_v3_c4",
+    "report_root": "docs/research/low_v3_c4",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C4B",
+    "branch": "experiment/anydic-low-v3-c4b-bidirectional",
+    "head": "dad1a0616efa4d375caa030297bb3142842cbc7a",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c4b",
+    "decision_path": "docs/results/low_v3_c4b/C4B_FINAL_DECISION.json",
+    "decision_sha256": "b0e9eb6ac597490f84f9ea6b8e1693de6506fe475ab62a730c973b5201af720a",
+    "decision_blob": "f112d4fb47c4554d8e3b35837663ecea3e1936c3",
+    "status": "C4B_LOW_COST_BIDIRECTIONAL_EVIDENCE_INSUFFICIENT",
+    "reports": [
+      "docs/research/low_v3_c4b/C4B_PROTOCOL.md",
+      "docs/research/low_v3_c4b/C4B_REVERSE_PIPELINE_AND_COST_AUDIT.md",
+      "docs/research/low_v3_c4b/C4B_LIGHTWEIGHT_REVERSE_EVIDENCE.md",
+      "docs/research/low_v3_c4b/C4B_CANDIDATE_IDENTIFIABILITY.md",
+      "docs/research/low_v3_c4b/C4B_FIELD_FAILURE_AND_RUNTIME.md",
+      "docs/research/low_v3_c4b/C4B_FINAL_DECISION.md",
+      "docs/research/low_v3_c4b/C4B_LOW_COST_BIDIRECTIONAL_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "低成本双向候选证据是否足够",
+      "图像级反向上下文复用、E8→E4 选择端点",
+      "推理执行；0 训练；Gate1 失败",
+      "部分信息保留；趋势/coherent roots 无改善",
+      "冻结信息充分性门槛未过；未启动独立新人口",
+      "成本可行不代表证据充分，停止当前集成"
+    ],
+    "result_root": "runs/low_v3_c4b",
+    "report_root": "docs/research/low_v3_c4b",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C5",
+    "branch": "experiment/anydic-low-v3-c5-local-refinement",
+    "head": "56303e977cef3e4d8b2de96d51ebdbce92ba8649",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c5",
+    "decision_path": "docs/results/low_v3_c5/C5_FINAL_DECISION.json",
+    "decision_sha256": "bb3158f0cf1fe5e82e6fbda20af15f3823781d5a1321735718ecae63b91f5285",
+    "decision_blob": "2072cf70745c87283318778b8b834d801f803aaa",
+    "status": "LOW_V3_C5_ENGINEERING_INCONCLUSIVE",
+    "reports": [
+      "docs/research/low_v3_c5/C5_PROTOCOL.md",
+      "docs/research/low_v3_c5/C5_ARCHITECTURE_AND_LEARNABILITY.md",
+      "docs/research/low_v3_c5/C5_LOCAL_REFINER_TRAINING.md",
+      "docs/research/low_v3_c5/C5_ABLATION_AND_SELECTION.md",
+      "docs/research/low_v3_c5/C5_FIELD_FAILURE_ANALYSIS.md",
+      "docs/research/low_v3_c5/C5_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c5/C5_FINAL_DECISION.md",
+      "docs/research/low_v3_c5/C5_LEARNED_LOCAL_REFINEMENT_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "局部学习 Refiner 可否生成正确新位置",
+      "形变感知局部 learned refinement",
+      "100 GPU smoke 更新；正式训练 0；2000-step Gate 未运行",
+      "梯度 smoke 通过，完整端点预算未通过",
+      "共享硬件下工程不确定；5 roots/6400 Query smoke 不构成正式资格",
+      "必须先验证完整端点与学习门槛"
+    ],
+    "result_root": "runs/low_v3_c5",
+    "report_root": "docs/research/low_v3_c5",
+    "environment_manifests": [
+      "docs/results/low_v3_c5/C5_REFINER_ARCHITECTURE.json"
+    ]
+  },
+  {
+    "stage": "C5R",
+    "branch": "experiment/anydic-low-v3-c5r-recheck",
+    "head": "5df6219f0c732cec1fab8f1279661b9fa732a242",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c5r",
+    "decision_path": "docs/results/low_v3_c5r/C5R_RESUME_FINAL_DECISION.json",
+    "decision_sha256": "1c8f1966f0243aef307dd01785d85d64cb64673ffc0ccebfa6a41d537dfe6d0c",
+    "decision_blob": "9ae0e5dffe17bcaff007b79bac358316c15cb37f",
+    "status": "C5R_MICRO_LEARNABILITY_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c5r/C5R_PROTOCOL.md",
+      "docs/research/low_v3_c5r/C5R_REFINEMENT_INTERFACE_AUDIT.md",
+      "docs/research/low_v3_c5r/C5R_EXCLUSIVE_GPU_BENCHMARK.md",
+      "docs/research/low_v3_c5r/C5R_IDENTITY_INITIALIZATION.md",
+      "docs/research/low_v3_c5r/C5R_MICRO_LEARNABILITY.md",
+      "docs/research/low_v3_c5r/C5R_FINAL_DECISION.md",
+      "docs/research/low_v3_c5r/C5R_ENGINEERING_AND_LEARNABILITY_REPORT_ZH.pdf",
+      "docs/research/low_v3_c5r/C5R_BLOCKED_VALIDATION_RESUME.md",
+      "docs/research/low_v3_c5r/C5R_REPLACEMENT_VS_IDENTITY_COST.md",
+      "docs/research/low_v3_c5r/C5R_EXCLUSIVE_GPU_VERIFICATION.md",
+      "docs/research/low_v3_c5r/C5R_MICRO_TRAINING_RESULTS.md",
+      "docs/research/low_v3_c5r/C5R_RESUME_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "C5 资源及微型学习是否可复核",
+      "同一 Refiner 有界复核；保持早期与 resume 两份 Decision",
+      "早期 0 optimizer；resume A=600，B=0，正式=0",
+      "最终 C5R_MICRO_LEARNABILITY_NOT_SUPPORTED",
+      "补充 backend parity 失败；不是所有 Refiner 不可能的证明；无独立人工审查",
+      "停止此 Refiner 的正式训练投入"
+    ],
+    "result_root": "runs/low_v3_c5r",
+    "report_root": "docs/research/low_v3_c5r",
+    "environment_manifests": [
+      "docs/results/low_v3_c5r/C5R_ENVIRONMENT.json",
+      "docs/results/low_v3_c5r/C5R_RESUME_ENVIRONMENT.json"
+    ]
+  },
+  {
+    "stage": "C6",
+    "branch": "experiment/anydic-low-v3-c6-information-audit",
+    "head": "7af849d8f4e1073a82c29604d4b0010cf236ff0d",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c6",
+    "decision_path": "docs/results/low_v3_c6/C6_FINAL_DECISION.json",
+    "decision_sha256": "6dbc1ced8323bc08b640dc3cbfb40a8f0c50548ba982eb9383e59570aa0040b0",
+    "decision_blob": "2938d497472ea12f108bebb07f314fcdb59b850e",
+    "status": "C6_LOCAL_INFORMATION_MECHANISM_CONFIRMED",
+    "reports": [
+      "docs/research/low_v3_c6/C6_PROTOCOL.md",
+      "docs/research/low_v3_c6/C6_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c6/C6_CORRELATION_IMPLEMENTATION_AUDIT.md",
+      "docs/research/low_v3_c6/C6_SEARCH_SUPPORT_AND_REACHABILITY.md",
+      "docs/research/low_v3_c6/C6_E4_E1_INFORMATION_ANALYSIS.md",
+      "docs/research/low_v3_c6/C6_STAGE_FAILURE_ATTRIBUTION.md",
+      "docs/research/low_v3_c6/C6_COHERENT_REGION_ANALYSIS.md",
+      "docs/research/low_v3_c6/C6_NEW_POPULATION_CONFIRMATION.md",
+      "docs/research/low_v3_c6/C6_FINAL_DECISION.md",
+      "docs/research/low_v3_c6/C6_LOCAL_CORRESPONDENCE_INFORMATION_REPORT_ZH.pdf",
+      "docs/research/low_v3_c6/C6_INDEPENDENT_AUDIT.md",
+      "docs/research/low_v3_c6/C6_REPRODUCTION.md"
+    ],
+    "summary": [
+      "局部失败是否来自支持/表示信息损失",
+      "E4 连续信息、合法 F4 中心、冻结 F1/原图对照",
+      "48 新独立 roots/96 条件机制推理；0 训练",
+      "F4 离散支持丢失与 E1 辨别不足并存；大旋转有 F8 覆盖丢失",
+      "不能宣称所有图像信息消失或未见生成器资格；判别解释为分析后规则",
+      "形变感知 E1 描述子优先，保留 E4 连续证据"
+    ],
+    "result_root": "runs/low_v3_c6",
+    "report_root": "docs/research/low_v3_c6",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C7",
+    "branch": "experiment/anydic-low-v3-c7-local-feature",
+    "head": "08747426ee2fcfe89a16864312606e0321338f85",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c7",
+    "decision_path": "docs/results/low_v3_c7/C7_FINAL_DECISION.json",
+    "decision_sha256": "47621d3f45e45769052fc3aea3a1d0a7f2714241991d586ee182ee1774e38620",
+    "decision_blob": "9f90f023f9793911f1c2a3b39d08f80d40cd6e88",
+    "status": "C7_LOCAL_FEATURE_LEARNABILITY_NOT_ESTABLISHED",
+    "reports": [
+      "docs/research/low_v3_c7/C7_PROTOCOL.md",
+      "docs/research/low_v3_c7/C7_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c7/C7_ARCHITECTURE.md",
+      "docs/research/low_v3_c7/C7_LOCAL_MATCHING_LEARNABILITY.md",
+      "docs/research/low_v3_c7/C7_FEATURE_RANKING_AND_ABLATION.md",
+      "docs/research/low_v3_c7/C7_E4_TO_E1_TRANSFER.md",
+      "docs/research/low_v3_c7/C7_FULL_FIELD_RESULTS.md",
+      "docs/research/low_v3_c7/C7_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c7/C7_FINAL_DECISION.md",
+      "docs/research/low_v3_c7/C7_DEFORMATION_AWARE_LOCAL_FEATURE_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "小型局部特征可否学到所需辨别",
+      "5920 参数局部表示",
+      "800 micro 更新；8 TRAIN roots，同 root heldout Query；正式训练 0",
+      "局部特征可学习性未建立",
+      "单一结构/有限训练，不是理论不可能；SELECTION/LOCKED 未生成",
+      "保留局部表示负结果，停止该架构续训"
+    ],
+    "result_root": "runs/low_v3_c7",
+    "report_root": "docs/research/low_v3_c7",
+    "environment_manifests": [
+      "docs/results/low_v3_c7/C7_ARCHITECTURE.json"
+    ]
+  },
+  {
+    "stage": "C8",
+    "branch": "experiment/anydic-low-v3-c8-pair-conditioned",
+    "head": "d6506f3b24d86154bde45205cc8bb84de1b0b434",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c8",
+    "decision_path": "docs/results/low_v3_c8/C8_FINAL_DECISION.json",
+    "decision_sha256": "f01ac9485c9aeb0a9e2bae9ce5c1e883301ed722b10a3c9f5337c37c2f837dc1",
+    "decision_blob": "26592257871f85d8e8095bb72d0dedf16d9b6961",
+    "status": "C8_RUNTIME_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c8/C8_PROTOCOL.md",
+      "docs/research/low_v3_c8/C8_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c8/C8_PAIR_CONDITIONED_ARCHITECTURE.md",
+      "docs/research/low_v3_c8/C8_LOCAL_GEOMETRY_INFORMATION.md",
+      "docs/research/low_v3_c8/C8_MICRO_LEARNABILITY.md",
+      "docs/research/low_v3_c8/C8_FEATURE_AND_PAIR_ABLATION.md",
+      "docs/research/low_v3_c8/C8_FULL_FIELD_EVALUATION.md",
+      "docs/research/low_v3_c8/C8_LOCKED_DEVELOPMENT_CHECK.md",
+      "docs/research/low_v3_c8/C8_FINAL_DECISION.md",
+      "docs/research/low_v3_c8/C8_PAIR_CONDITIONED_LOCAL_MATCHING_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "成对局部匹配能否兼顾证据与预算",
+      "1383 参数 pair-conditioned matcher",
+      "3 工程 smoke 更新后丢弃；micro/正式训练 0",
+      "Gate0 runtime 未支持",
+      "单一工程图像对及 3 历史 GT-free replay；没有科学 learnability 否定",
+      "匹配证据必须在完整端点预算内实现"
+    ],
+    "result_root": "runs/low_v3_c8",
+    "report_root": "docs/research/low_v3_c8",
+    "environment_manifests": [
+      "docs/results/low_v3_c8/C8_ARCHITECTURE.json",
+      "docs/results/low_v3_c8/C8_ENVIRONMENT.json"
+    ]
+  },
+  {
+    "stage": "C9",
+    "branch": "experiment/anydic-low-v3-c9-real-validation",
+    "head": "0d802df1bdd5c3456072d43e076efa3300ac8e46",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9",
+    "decision_path": "docs/results/low_v3_c9/C9_FINAL_DECISION.json",
+    "decision_sha256": "466e81cb7dac0b35ef4e610d6f31ff3c2ffe32747bad75b02b7397517d81672e",
+    "decision_blob": "264c5b9b69cde970a50a6842361d204e5477de62",
+    "status": "C9_REAL_DATA_NOT_AVAILABLE",
+    "reports": [
+      "docs/research/low_v3_c9/C9_REAL_EXPERIMENT_ACQUISITION_PROTOCOL.md",
+      "docs/research/low_v3_c9/C9_PROTOCOL.md",
+      "docs/research/low_v3_c9/C9_REAL_DATA_INVENTORY.md",
+      "docs/research/low_v3_c9/C9_REFERENCE_TRACEABILITY.md",
+      "docs/research/low_v3_c9/C9_PHYSICAL_COORDINATE_AUDIT.md",
+      "docs/research/low_v3_c9/C9_REAL_DISPLACEMENT_ACCURACY.md",
+      "docs/research/low_v3_c9/C9_REAL_REPEATABILITY.md",
+      "docs/research/low_v3_c9/C9_C6_MECHANISM_TRANSFER.md",
+      "docs/research/low_v3_c9/C9_REAL_GRADIENT_AND_HOTSPOT.md",
+      "docs/research/low_v3_c9/C9_FINAL_DECISION.md",
+      "docs/research/low_v3_c9/C9_REAL_EXPERIMENTAL_VALIDATION_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "冻结 D4 可否做真实实验资格",
+      "真实输入/独立 2D GT 与采集协议准备",
+      "真实序列/Query=0；0 训练；Gate0 停止",
+      "C9_REAL_DATA_NOT_AVAILABLE",
+      "独立真实测量数据不可用；绝对精度未验证",
+      "制定真实采集协议并保留合成/真实区别"
+    ],
+    "result_root": "runs/low_v3_c9",
+    "report_root": "docs/research/low_v3_c9",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C9B",
+    "branch": "experiment/anydic-low-v3-c9b-dic-challenge",
+    "head": "859d53e1b7e769f15e4ac91d397de56c4804f5ba",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9b",
+    "decision_path": "docs/results/low_v3_c9b/C9B_FINAL_DECISION.json",
+    "decision_sha256": "8047d7059233d7cc900468a5aa0235cf2de44e031ad45f5a1f759689e76bfc6c",
+    "decision_blob": "d38d104d8dbc088583c57ecdfb503c72309b354b",
+    "status": "C9B_REAL_IMAGE_DESCRIPTIVE_EVALUATION_COMPLETE",
+    "reports": [
+      "docs/research/low_v3_c9b/C9B_OFFICIAL_PROVENANCE_AND_REFERENCE.md",
+      "docs/research/low_v3_c9b/C9B_PROTOCOL.md",
+      "docs/research/low_v3_c9b/C9B_DIC_CHALLENGE_REAL_IMAGE_EVALUATION_ZH.pdf",
+      "docs/research/low_v3_c9b/C9B_SAMPLE16_STAGE_AUDIT.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE12_REAL_FIELD.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE13_CRACK_AND_DEFORMATION.md",
+      "docs/research/low_v3_c9b/C9B_SAMPLE17_OUT_OF_PLANE.md",
+      "docs/research/low_v3_c9b/C9B_REAL_SELF_CONSISTENCY.md",
+      "docs/research/low_v3_c9b/C9B_C6_MECHANISM_TRANSFER.md",
+      "docs/research/low_v3_c9b/C9B_FINAL_DECISION.md"
+    ],
+    "summary": [
+      "真实 DIC Challenge 图像呈现哪些匹配现象",
+      "冻结 D4 的 native 12/13/16；17 原生 OOM 后 native-pitch crop",
+      "281 GPU 成功/282 尝试；227 科研端点；0 训练",
+      "真实图像描述性评价完成",
+      "无独立逐点 2D GT；16 坐标映射未核实；17 仅 crop；自洽不等于绝对准确",
+      "识别闭合长尾、可观测支持与真实数据资源限制"
+    ],
+    "result_root": "runs/low_v3_c9b",
+    "report_root": "docs/research/low_v3_c9b",
+    "environment_manifests": [
+      "docs/results/low_v3_c9b/C9B_ENVIRONMENT.json"
+    ]
+  },
+  {
+    "stage": "C9C",
+    "branch": "experiment/anydic-low-v3-c9c-observability",
+    "head": "594678f2315b1b2a2a948ef624d27145c1690648",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c9c",
+    "decision_path": "docs/results/low_v3_c9c/C9C_FINAL_DECISION.json",
+    "decision_sha256": "f30e830917e3aa01a5ee174a710be87216f08b04f9289936e450b2b432dc0534",
+    "decision_blob": "78a80d4bb7d84945624b868f88e5a7926887b603",
+    "status": {
+      "risk_associations": "C9C_REAL_OBSERVABILITY_RISK_ASSOCIATIONS_SUPPORTED",
+      "offline_support_rule": "C9C_SELECTIVE_ABSTENTION_DEVELOPMENT_SUPPORTED",
+      "final_frame_annotation": "C9C_VISIBILITY_ANNOTATION_INCONCLUSIVE",
+      "calibrated_reliability": "C9C_RELIABILITY_EVIDENCE_INSUFFICIENT"
+    },
+    "reports": [
+      "docs/research/low_v3_c9c/C9C_PROTOCOL.md",
+      "docs/research/low_v3_c9c/C9C_FROZEN_DATA_AUTHORITY.md",
+      "docs/research/low_v3_c9c/C9C_SAMPLE13_MATERIAL_VISIBILITY.md",
+      "docs/research/low_v3_c9c/C9C_PHOTOMETRIC_AND_PEAK_EVIDENCE.md",
+      "docs/research/low_v3_c9c/C9C_CYCLE_TEMPORAL_ANALYSIS.md",
+      "docs/research/low_v3_c9c/C9C_CONFIDENCE_ASSESSMENT.md",
+      "docs/research/low_v3_c9c/C9C_SELECTIVE_ABSTENTION.md",
+      "docs/research/low_v3_c9c/C9C_SAMPLE16_REFERENCE_FOLLOWUP.md",
+      "docs/research/low_v3_c9c/C9C_FINAL_DECISION.md",
+      "docs/research/low_v3_c9c/C9C_REAL_OBSERVABILITY_AND_RELIABILITY_REPORT_ZH.pdf",
+      "docs/research/low_v3_c9c/C9C_REPRODUCTION.md"
+    ],
+    "summary": [
+      "图像可观测性信号是否可预测风险",
+      "图像-only support/visibility seal、offline abstention、反向/时序审计",
+      "12 新 GPU 端点/14715 Query；0 训练",
+      "风险关联与有界离线拒绝支持；visibility 标注不确定；校准可靠性不足",
+      "自动未经专家审核；B1 范围；Sample16 reference pending；无独立 GT",
+      "需要盲专家标注和真实参考校准，不能把 confidence 当正确概率"
+    ],
+    "result_root": "runs/low_v3_c9c",
+    "report_root": "docs/research/low_v3_c9c",
+    "environment_manifests": []
+  },
+  {
+    "stage": "C10",
+    "branch": "experiment/anydic-low-v3-c10-support-aware",
+    "head": "40ab87ed1ae3478cc32d5121b84824c014616689",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-low-v3-c10",
+    "decision_path": "docs/results/low_v3_c10/C10_FINAL_DECISION.json",
+    "decision_sha256": "f149f26cf1615976b06c8e7bd9e45c2fbd98a61e8f04103b85ea1ebe8397f1e1",
+    "decision_blob": "185b96b6e87f78171024f8e9d62e3c9cd3f2b18d",
+    "status": "C10_COHERENT_MATCHING_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/low_v3_c10/C10_PROTOCOL.md",
+      "docs/research/low_v3_c10/C10_FROZEN_AUTHORITY.md",
+      "docs/research/low_v3_c10/C10_SUPPORT_AWARE_ARCHITECTURE.md",
+      "docs/research/low_v3_c10/C10_IMAGE_LEVEL_MOTION_ANCHORS.md",
+      "docs/research/low_v3_c10/C10_F4_SUPPORT_PRESERVATION.md",
+      "docs/research/low_v3_c10/C10_JOINT_E4_E1_LEARNING.md",
+      "docs/research/low_v3_c10/C10_TRAINING_AND_SELECTION.md",
+      "docs/research/low_v3_c10/C10_COHERENT_FAILURE_RESULTS.md",
+      "docs/research/low_v3_c10/C10_ABLATION_AND_RUNTIME.md",
+      "docs/research/low_v3_c10/C10_LOCKED_CONFIRMATION.md",
+      "docs/research/low_v3_c10/C10_FINAL_DECISION.md",
+      "docs/research/low_v3_c10/README.md"
+    ],
+    "summary": [
+      "支持感知联合匹配能否恢复完整对应",
+      "4825 参数 support-aware 学习模块",
+      "24 roots：16 TRAIN/8 CHECK，1000 micro 更新；正式=0",
+      "F4 support +3.1831pp，F1Rank@4 +1.3164pp",
+      "均未达冻结 5pp 门槛；Gate1 失败；SELECTION/LOCKED 未生成",
+      "局部信息增益不足以支持整场匹配修复"
+    ],
+    "result_root": "runs/low_v3_c10",
+    "report_root": "docs/research/low_v3_c10",
+    "environment_manifests": [
+      "docs/results/low_v3_c10/C10_ARCHITECTURE.json",
+      "docs/results/low_v3_c10/C10_TRAINING_SOURCE_FREEZE_ATTEMPT01.json",
+      "docs/results/low_v3_c10/C10_TRAINING_SOURCE_FREEZE.json"
+    ]
+  },
+  {
+    "stage": "C11",
+    "branch": "experiment/anydic-c11-matching-repair",
+    "head": "0ac7d6659b84e2ef39072e45e88f06e3a38fce51",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c11-matching-repair",
+    "decision_path": "docs/results/anydic_c11/C11_FINAL_DECISION.json",
+    "decision_sha256": "19bd366f6fb0f11bd5bf824b3aec913d6d6146155f197278fb3b21387b07a48c",
+    "decision_blob": "120488628b53c99fc31eea5a7e1675e2d212dd56",
+    "status": "C11_NATIVE_SYNTHETIC_MATCHING_REPAIR_CONFIRMED",
+    "reports": [
+      "docs/research/anydic_c11/C11_PROTOCOL.md",
+      "docs/research/anydic_c11/C11_ARCHITECTURE_DECISION.md",
+      "docs/research/anydic_c11/C11_GT_BENCHMARK.md",
+      "docs/research/anydic_c11/C11_COHERENT_STRESS_POPULATION.md",
+      "docs/research/anydic_c11/C11_OPTICAL_FLOW_ARCHITECTURE_REVIEW.md",
+      "docs/research/anydic_c11/C11_PRETRAINED_MODEL_COMPARISON.md",
+      "docs/research/anydic_c11/C11_MATCHING_REPAIR_IMPLEMENTATION.md",
+      "docs/research/anydic_c11/C11_DIC_FINETUNING.md",
+      "docs/research/anydic_c11/C11_MATCHING_ERROR_RECOVERY.md",
+      "docs/research/anydic_c11/C11_COHERENT_FAILURE_EVALUATION.md",
+      "docs/research/anydic_c11/C11_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c11/C11_FINAL_DECISION.md",
+      "docs/research/anydic_c11/C11_ANYDIC_MATCHING_FAILURE_REPAIR_ZH.pdf"
+    ],
+    "summary": [
+      "完整 SEA-RAFT 匹配能否真实修复 DIC 对应",
+      "官方 SEA-RAFT M 全 recurrent matcher，连续 GT 专项训练，任意 Query 读出",
+      "320 独立 TRAIN worlds，12,000 更新；独立 LOCKED 96G+128H",
+      "192×256 匹配恢复确认；LOCKED-H 恢复 90 coherent roots、48140 个 >20px 对应",
+      "H 仍 1 coherent root/517 个 >20px，新增 19 个 >20px；上游暴露未知；无广泛分辨率/真实资格",
+      "目前独立合成 GT 支持的主要新匹配候选；未自动替换冻结 D4"
+    ],
+    "result_root": "runs/anydic_c11",
+    "report_root": "docs/research/anydic_c11",
+    "environment_manifests": [
+      "docs/results/anydic_c11/C11_ARCHITECTURE_DECISION.json",
+      "docs/results/anydic_c11/C11_TRAINING_SOURCE_FREEZE.json",
+      "docs/results/anydic_c11/C11_ENVIRONMENT.json"
+    ]
+  },
+  {
+    "stage": "C12",
+    "branch": "experiment/anydic-c12-cross-resolution",
+    "head": "97cecd6fd3ad7b424502cfdbc0cdc09ccdee4176",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c12-cross-resolution",
+    "decision_path": "docs/results/anydic_c12/C12_FINAL_DECISION.json",
+    "decision_sha256": "30e3948f009aa8d64aef12e7caa7c8cb71eee3f6de36841156d953f1605c5885",
+    "decision_blob": "bd719ada6c4c1e182508bae2ca5088e71210aa5d",
+    "status": "C12_ROBUSTNESS_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/anydic_c12/C12_PROTOCOL.md",
+      "docs/research/anydic_c12/C12_C11_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c12/C12_PHYSICAL_RESOLUTION_PROTOCOL.md",
+      "docs/research/anydic_c12/C12_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c12/C12_TEXTURE_OOD_RESULTS.md",
+      "docs/research/anydic_c12/C12_PSF_NOISE_ILLUMINATION.md",
+      "docs/research/anydic_c12/C12_LARGE_ROTATION_AND_STARLIKE.md",
+      "docs/research/anydic_c12/C12_PHYSICAL_DISPLACEMENT_AND_GRADIENT.md",
+      "docs/research/anydic_c12/C12_RUNTIME_AND_QUERY.md",
+      "docs/research/anydic_c12/C12_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c12/C12_FINAL_DECISION.md",
+      "docs/research/anydic_c12/C12_CROSS_RESOLUTION_ROBUSTNESS_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "C11 的跨分辨率和成像鲁棒性是否支持",
+      "连续物理 world，R1/R2/R3、旋转/周期场、OOD纹理、PSF/照明/噪声及梯度",
+      "冻结 C11 推理；224 LOCKED 条件；0 权重更新",
+      "C12_ROBUSTNESS_NOT_SUPPORTED；R1 LOCKED 梯度热点有局部支持",
+      "高像素位移/大旋转/Sinusoidal/Star-like 及 R2/R3 失败；纹理非完整因子矩阵",
+      "拆开原生分辨率、物理单位精度和域泛化"
+    ],
+    "result_root": "runs/anydic_c12",
+    "report_root": "docs/research/anydic_c12",
+    "environment_manifests": [
+      "docs/results/anydic_c12/C12_EVALUATION_SOURCE_FREEZE.json",
+      "docs/results/anydic_c12/C12_ENVIRONMENT.json",
+      "docs/results/anydic_c12/C12_LOCKED_SOURCE_FREEZE.json"
+    ]
+  },
+  {
+    "stage": "C13",
+    "branch": "experiment/anydic-c13-scale-aware",
+    "head": "c9270878b1d4e463d5823da1c92c859fef7ad3e1",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c13-scale-aware",
+    "decision_path": "docs/results/anydic_c13/C13_FINAL_DECISION.json",
+    "decision_sha256": "e5e4b7556ec346ee2b5dcf0411cbb250f6311fef6c26b2c16697bec4c1264719",
+    "decision_blob": "f0688422aca2a4e15309151b58d50438210fdb3d",
+    "status": "C13_SCALE_AWARE_MATCHING_REPAIR_NOT_SUPPORTED_DEV_GATE_FAILED",
+    "reports": [
+      "docs/research/anydic_c13/C13_PROTOCOL.md",
+      "docs/research/anydic_c13/C13_ARCHITECTURE_DECISION.md",
+      "docs/research/anydic_c13/C13_COARSE_TO_NATIVE_FEASIBILITY.md",
+      "docs/research/anydic_c13/C13_SCALE_FAILURE_ATTRIBUTION.md",
+      "docs/research/anydic_c13/C13_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c13/C13_MULTI_RESOLUTION_TRAINING.md",
+      "docs/research/anydic_c13/C13_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c13/C13_ROTATION_AND_PERIODIC_FAILURES.md",
+      "docs/research/anydic_c13/C13_PHYSICAL_CONVERGENCE.md",
+      "docs/research/anydic_c13/C13_GRADIENT_HOTSPOT.md",
+      "docs/research/anydic_c13/C13_RUNTIME_QUERY.md",
+      "docs/research/anydic_c13/C13_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c13/C13_FINAL_DECISION.md",
+      "docs/research/anydic_c13/C13_SCALE_AWARE_MATCHING_REPAIR_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "原 SEA-RAFT 多尺度训练能否修复尺度退化",
+      "Route A 原网络、新参数 0；BF16 多分辨率训练；R3 原生 crop",
+      "500 micro 后丢弃；从 C11 重启正式 12000 更新；112 DEV roots",
+      "R3-G mean 1.447749→0.035808mm/coherent 5→0；R3-H 8.104436→6.848131mm/34→19",
+      "压力原正确保护不足；R3 rotation 16→16 coherent、误差变差；DEV Gate 失败，LOCKED 未生成/运行",
+      "像素幅度×物理特征采样交互、原生更新不稳定均需解决"
+    ],
+    "result_root": "runs/anydic_c13",
+    "report_root": "docs/research/anydic_c13",
+    "environment_manifests": [
+      "docs/results/anydic_c13/C13_ARCHITECTURE.json",
+      "docs/results/anydic_c13/C13_SOURCE_FREEZE_A.json",
+      "docs/results/anydic_c13/C13_TRAINING_SOURCE_FREEZE_MICRO.json",
+      "docs/results/anydic_c13/C13_TRAINING_SOURCE_FREEZE_MAIN.json"
+    ]
+  },
+  {
+    "stage": "C14",
+    "branch": "experiment/anydic-c14-nonrotation-cross-scale",
+    "head": "f2dbcfe8120b04ffcc30a32eba2675c865df715d",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c14-nonrotation",
+    "decision_path": "docs/results/anydic_c14/C14_FINAL_DECISION.json",
+    "decision_sha256": "170ef08f751e40a617c821226dfa86247f13826543bd2676d68f4c109384b225",
+    "decision_blob": "cd3fc81e7237e017bb1e9ff0c1fdc2dcc0b68a92",
+    "status": "C14_NONROTATION_QUALIFICATION_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/anydic_c14/C14_PROTOCOL.md",
+      "docs/research/anydic_c14/C14_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c14/C14_NONROTATION_SCOPE.md",
+      "docs/research/anydic_c14/C14_C13_DEV_REEVALUATION.md",
+      "docs/research/anydic_c14/C14_ARCHITECTURE_AND_TRAINING_DECISION.md",
+      "docs/research/anydic_c14/C14_TARGETED_TRAINING.md",
+      "docs/research/anydic_c14/C14_NATIVE_RESOLUTION_RESULTS.md",
+      "docs/research/anydic_c14/C14_PERIODIC_FIELD_ANALYSIS.md",
+      "docs/research/anydic_c14/C14_PHYSICAL_CONVERGENCE.md",
+      "docs/research/anydic_c14/C14_CORRECT_MATCH_PRESERVATION.md",
+      "docs/research/anydic_c14/C14_GRADIENT_HOTSPOT.md",
+      "docs/research/anydic_c14/C14_LOCKED_CONFIRMATION.md",
+      "docs/research/anydic_c14/C14_FINAL_DECISION.md",
+      "docs/research/anydic_c14/C14_NONROTATION_C13_DEV_REEVALUATION.md",
+      "docs/research/anydic_c14/C14_NONROTATION_CROSS_SCALE_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "排除大旋转后能否获得非旋转资格",
+      "排除 40–60° 极端刚体旋转，限定 Route B crop 专项训练",
+      "1000 实际更新后预注册早停；新 SELECTION 执行，LOCKED 未运行",
+      "冻结 C13 在暴露 DEV R1/R2 常规成片匹配改善；R3 周期仍有 3 coherent 残余",
+      "原正确保留不足；训练候选新增事件/周期 Gate 失败；后验 full R3 backward 可行不改写先前协议",
+      "限定范围仍需要保护门槛；crop 负结果不否定全部 full-frame 训练"
+    ],
+    "result_root": "runs/anydic_c14",
+    "report_root": "docs/research/anydic_c14",
+    "environment_manifests": [
+      "docs/results/anydic_c14/C14_TRAINING_SOURCE_FREEZE.json"
+    ]
+  },
+  {
+    "stage": "C15",
+    "branch": "experiment/anydic-c15-full-frame-training",
+    "head": "c960a39379ea10d5f65825a89f4bc29e69832746",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c15-full-frame",
+    "decision_path": "docs/results/anydic_c15/C15_FINAL_DECISION.json",
+    "decision_sha256": "93dc51aa2183715a494bf68cede2aafb5f041e0a8874659d6e8edf928d2c9d8e",
+    "decision_blob": "046ea1663ff4b8285fbd9f3b6387456249c22256",
+    "status": "C15_FULL_FRAME_TRAINING_NOT_SUPPORTED",
+    "reports": [
+      "docs/research/anydic_c15/C15_PROTOCOL.md",
+      "docs/research/anydic_c15/C15_FROZEN_AUTHORITY.md",
+      "docs/research/anydic_c15/C15_CROP_CORRESPONDENCE_SUPPORT.md",
+      "docs/research/anydic_c15/C15_CROP_LOSS_MASK_AUDIT.md",
+      "docs/research/anydic_c15/C15_FULL_VS_CROP_FEATURE_ANALYSIS.md",
+      "docs/research/anydic_c15/C15_NATIVE_UPDATE_STABILITY.md",
+      "docs/research/anydic_c15/C15_FULL_FRAME_OPTIMIZER_FEASIBILITY.md",
+      "docs/research/anydic_c15/C15_MATCHED_TRAINING_PROTOCOL.md",
+      "docs/research/anydic_c15/C15_PAIRED_TRAINING_RESULTS.md",
+      "docs/research/anydic_c15/C15_FINAL_DECISION.md",
+      "docs/research/anydic_c15/C15_FULL_FRAME_CORRESPONDENCE_TRAINING_REPORT_ZH.pdf"
+    ],
+    "summary": [
+      "完整图训练能否解除 crop 支持损失及周期失败",
+      "同协议配对 Crop600/Full600，真实完整图 backward/optimizer，near-GT 更新诊断",
+      "CROP/FULL 各600 GPU 更新；丢弃 smoke=3；LOCKED_GT_reads=0",
+      "16 周期R3 roots：mean 0.191353→0.083556mm，ratio 0.436658（95%CI 0.264697–0.953107），>20px 371→198",
+      "Full 原正确 native 保留98.1654%：351 correct→wrong；Gate3 失败；crop 支持损失确认但非周期失败充分因果",
+      "确认 C15_NATIVE_UPDATE_INSTABILITY_CONFIRMED；先诊断保护/更新再扩大训练"
+    ],
+    "result_root": "runs/anydic_c15",
+    "report_root": "docs/research/anydic_c15",
+    "environment_manifests": [
+      "docs/results/anydic_c15/C15_TRAINING_SOURCE_FREEZE_CROP.json",
+      "docs/results/anydic_c15/C15_TRAINING_SOURCE_FREEZE_FULL.json"
+    ]
+  },
+  {
+    "stage": "C16",
+    "branch": "experiment/anydic-c16-native-update-stability",
+    "head": "caba509f21de6f698c01e8ef685851c0b2dca887",
+    "source_worktree": "${ANYDIC_WORKTREES}/anydic-c16-native-update-stability",
+    "decision_path": "docs/results/anydic_c16/C16_A_RESULTS_SUMMARY.json",
+    "decision_sha256": "f82c9749cef4e5d1c1458609314717966daf43989eb7cc8a7b208bc39a0132e1",
+    "decision_blob": "af4f558edd7fa442c3ab0c43236382e8442ce58b",
+    "status": "C16_A_MORE_DIAGNOSIS_REQUIRED",
+    "reports": [
+      "docs/research/anydic_c16/C16_A_UPDATER_MATHEMATICAL_AUDIT.md",
+      "docs/research/anydic_c16/C16_B_EXPERIMENT_DESIGN.md",
+      "docs/research/anydic_c16/C16_REPRODUCIBILITY.md",
+      "docs/research/anydic_c16/C16_A_CORRECT_POINT_TRANSITION_ATLAS.md",
+      "docs/research/anydic_c16/C16_A_GT_FREE_RISK_SIGNAL_AUDIT.md",
+      "docs/research/anydic_c16/C16_A_ORACLE_AND_EARLY_EXIT_DIAGNOSIS.md",
+      "docs/research/anydic_c16/C16_A_PHASE_DECISION.md"
+    ],
+    "summary": [
+      "原生迭代伤害/恢复可否被 GT-free 控制区分",
+      "实际 ConvNeXt 更新块；latent flow、hidden、相关查找及 convex upsampling 轨迹/干预诊断",
+      "32 暴露 C15 MICRO_DEV roots/288 轨迹；CPU 重建及 GPU 冻结终点复核；0 训练；C16-B未启动",
+      "正确→错误与错误→正确并存；现有简单退出/逐点输出/uncertainty 规则无合格联合结果",
+      "CPU/GPU 中间轨迹 max差1.7869568px、429分类差异；periodic R3 dense oracle 保留98.522%<99%；不是新独立资格",
+      "优先原 GPU 轨迹复核、Decoder-only 控制与 flow/hidden/upsampling 联合状态干预"
+    ],
+    "result_root": "runs/anydic_c16",
+    "report_root": "docs/research/anydic_c16",
+    "environment_manifests": []
+  }
+]
